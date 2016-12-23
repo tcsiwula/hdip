@@ -1,8 +1,7 @@
-
-.idea/encodings.xml
-.idea/hdip.iml
-.idea/markdown-navigator.xml
-.idea/markdown-navigator/
-.idea/modules.xml
-.idea/vcs.xml
-.idea/workspace.xml
+/node_modules
+npm-debug.log
+.DS_Store
+/*.envnode_modules
+.idea
+/dist
+.env
