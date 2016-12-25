@@ -60,7 +60,7 @@
 
 	var _componentsAppJsx2 = _interopRequireDefault(_componentsAppJsx);
 
-	ReactDOM.render(_react2['default'].createElement(_componentsAppJsx2['default'], null), document.getElementById('root'));
+	_reactDom2['default'].render(_react2['default'].createElement(_componentsAppJsx2['default'], null), document.getElementById('root'));
 
 /***/ },
 /* 1 */
@@ -19763,7 +19763,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', {
-	  value: true
+	    value: true
 	});
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -19787,51 +19787,51 @@
 	var _channelsChannelSectionJsx2 = _interopRequireDefault(_channelsChannelSectionJsx);
 
 	var App = (function (_Component) {
-	  _inherits(App, _Component);
+	    _inherits(App, _Component);
 
-	  function App(props) {
-	    _classCallCheck(this, App);
+	    function App(props) {
+	        _classCallCheck(this, App);
 
-	    _get(Object.getPrototypeOf(App.prototype), 'constructor', this).call(this, props);
-	    this.state = {
-	      channels: []
-	    };
-	  }
-
-	  _createClass(App, [{
-	    key: 'addChannel',
-	    value: function addChannel(name) {
-	      var channels = this.state.channels;
-
-	      channels.push({ id: channels.length, name: name });
-	      this.setState({ channels: channels });
-	      // TODO: Send to server
+	        _get(Object.getPrototypeOf(App.prototype), 'constructor', this).call(this, props);
+	        this.state = {
+	            channels: []
+	        };
 	    }
-	  }, {
-	    key: 'setChannel',
-	    value: function setChannel(activeChannel) {
-	      this.setState({ activeChannel: activeChannel });
-	      // TODO: Get Channels Messages
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      return _react2['default'].createElement(
-	        'div',
-	        { className: 'app' },
-	        _react2['default'].createElement(
-	          'div',
-	          { className: 'nav' },
-	          _react2['default'].createElement(_channelsChannelSectionJsx2['default'], _extends({}, this.state, {
-	            addChannel: this.addChannel.bind(this),
-	            setChannel: this.setChannel.bind(this)
-	          }))
-	        )
-	      );
-	    }
-	  }]);
 
-	  return App;
+	    _createClass(App, [{
+	        key: 'addChannel',
+	        value: function addChannel(name) {
+	            var channels = this.state.channels;
+
+	            channels.push({ id: channels.length, name: name });
+	            this.setState({ channels: channels });
+	            // TODO: Send to server
+	        }
+	    }, {
+	        key: 'setChannel',
+	        value: function setChannel(activeChannel) {
+	            this.setState({ activeChannel: activeChannel });
+	            // TODO: Get Channels Messages
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2['default'].createElement(
+	                'div',
+	                { className: 'app' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'nav' },
+	                    _react2['default'].createElement(_channelsChannelSectionJsx2['default'], _extends({}, this.state, {
+	                        addChannel: this.addChannel.bind(this),
+	                        setChannel: this.setChannel.bind(this)
+	                    }))
+	                )
+	            );
+	        }
+	    }]);
+
+	    return App;
 	})(_react.Component);
 
 	exports['default'] = App;
@@ -19844,7 +19844,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', {
-	  value: true
+	    value: true
 	});
 
 	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
@@ -19870,46 +19870,47 @@
 	var _ChannelListJsx2 = _interopRequireDefault(_ChannelListJsx);
 
 	var ChannelSection = (function (_Component) {
-	  _inherits(ChannelSection, _Component);
+	    _inherits(ChannelSection, _Component);
 
-	  function ChannelSection() {
-	    _classCallCheck(this, ChannelSection);
+	    function ChannelSection() {
+	        _classCallCheck(this, ChannelSection);
 
-	    _get(Object.getPrototypeOf(ChannelSection.prototype), 'constructor', this).apply(this, arguments);
-	  }
-
-	  _createClass(ChannelSection, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2['default'].createElement(
-	        'div',
-	        { className: 'support panel panel-primary' },
-	        _react2['default'].createElement(
-	          'div',
-	          { className: 'panel-heading' },
-	          _react2['default'].createElement(
-	            'strong',
-	            null,
-	            'Channels'
-	          )
-	        ),
-	        _react2['default'].createElement(
-	          'div',
-	          { className: 'panel-body channels' },
-	          _react2['default'].createElement(_ChannelListJsx2['default'], this.props),
-	          _react2['default'].createElement(_ChannelFormJsx2['default'], this.props)
-	        )
-	      );
+	        _get(Object.getPrototypeOf(ChannelSection.prototype), 'constructor', this).apply(this, arguments);
 	    }
-	  }]);
 
-	  return ChannelSection;
+	    _createClass(ChannelSection, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2['default'].createElement(
+	                'div',
+	                { className: 'support panel panel-primary' },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'panel-heading' },
+	                    _react2['default'].createElement(
+	                        'strong',
+	                        null,
+	                        'Channels'
+	                    )
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'panel-body channels' },
+	                    _react2['default'].createElement(_ChannelListJsx2['default'], this.props),
+	                    _react2['default'].createElement(_ChannelFormJsx2['default'], this.props)
+	                )
+	            );
+	        }
+	    }]);
+
+	    return ChannelSection;
 	})(_react.Component);
 
 	ChannelSection.propTypes = {
-	  channels: _react2['default'].PropTypes.array.isRequired,
-	  setChannel: _react2['default'].PropTypes.func.isRequired,
-	  addChannel: _react2['default'].PropTypes.func.isRequired
+	    channels: _react2['default'].PropTypes.array.isRequired,
+	    setChannel: _react2['default'].PropTypes.func.isRequired,
+	    addChannel: _react2['default'].PropTypes.func.isRequired,
+	    activeChannel: _react2['default'].PropTypes.object.isRequired
 	};
 
 	exports['default'] = ChannelSection;
@@ -19955,7 +19956,6 @@
 	      var node = this.refs.channel;
 	      var channelName = node.value;
 	      this.props.addChannel(channelName);
-	      setChannel(channel);
 	      node.value = '';
 	    }
 	  }, {
@@ -19965,9 +19965,14 @@
 	        'form',
 	        { onSubmit: this.onSubmit.bind(this) },
 	        _react2['default'].createElement(
-	          'input',
-	          null,
-	          'type=\'text\' ref=\'channel\''
+	          'div',
+	          { className: 'form-group' },
+	          _react2['default'].createElement('input', {
+	            className: 'form-control',
+	            placeholder: 'Add Channel',
+	            type: 'text',
+	            ref: 'channel'
+	          })
 	        )
 	      );
 	    }
@@ -19976,7 +19981,7 @@
 	  return ChannelForm;
 	})(_react.Component);
 
-	ChannelList.propTypes = {
+	ChannelForm.propTypes = {
 	  addChannel: _react2['default'].PropTypes.func.isRequired
 	};
 
@@ -19990,8 +19995,10 @@
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', {
-	  value: true
+	    value: true
 	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
@@ -20012,38 +20019,39 @@
 	var _ChannelJsx2 = _interopRequireDefault(_ChannelJsx);
 
 	var ChannelList = (function (_Component) {
-	  _inherits(ChannelList, _Component);
+	    _inherits(ChannelList, _Component);
 
-	  function ChannelList() {
-	    _classCallCheck(this, ChannelList);
+	    function ChannelList() {
+	        _classCallCheck(this, ChannelList);
 
-	    _get(Object.getPrototypeOf(ChannelList.prototype), 'constructor', this).apply(this, arguments);
-	  }
-
-	  _createClass(ChannelList, [{
-	    key: 'render',
-	    value: function render() {
-	      var _this = this;
-
-	      return _react2['default'].createElement(
-	        'ul',
-	        null,
-	        this.props.channels.map(function (chan) {
-	          _react2['default'].createElement(_ChannelJsx2['default'], {
-	            channel: chan,
-	            setChannel: _this.props.setChannel
-	          });
-	        })
-	      );
+	        _get(Object.getPrototypeOf(ChannelList.prototype), 'constructor', this).apply(this, arguments);
 	    }
-	  }]);
 
-	  return ChannelList;
+	    _createClass(ChannelList, [{
+	        key: 'render',
+	        value: function render() {
+	            var _this = this;
+
+	            return _react2['default'].createElement(
+	                'ul',
+	                null,
+	                this.props.channels.map(function (chan) {
+	                    return _react2['default'].createElement(_ChannelJsx2['default'], _extends({
+	                        channel: chan,
+	                        key: chan.id
+	                    }, _this.props));
+	                })
+	            );
+	        }
+	    }]);
+
+	    return ChannelList;
 	})(_react.Component);
 
 	ChannelList.propTypes = {
-	  channels: _react2['default'].PropTypes.array.isRequired,
-	  setChannel: _react2['default'].PropTypes.func.isRequired
+	    channels: _react2['default'].PropTypes.array.isRequired,
+	    setChannel: _react2['default'].PropTypes.func.isRequired,
+	    activeChannel: _react2['default'].PropTypes.object.isRequired
 	};
 
 	exports['default'] = ChannelList;
@@ -20095,11 +20103,14 @@
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var channel = this.props.channel;
+	            var _props2 = this.props;
+	            var channel = _props2.channel;
+	            var activeChannel = _props2.activeChannel;
 
+	            var active = channel === activeChannel ? 'active' : '';
 	            return _react2['default'].createElement(
 	                'li',
-	                null,
+	                { className: active },
 	                _react2['default'].createElement(
 	                    'a',
 	                    { onClick: this.onClick.bind(this) },
@@ -20114,7 +20125,8 @@
 
 	Channel.propTypes = {
 	    channel: _react2['default'].PropTypes.object.isRequired,
-	    setChannel: _react2['default'].PropTypes.func.isRequired
+	    setChannel: _react2['default'].PropTypes.func.isRequired,
+	    activeChannel: _react2['default'].PropTypes.object.isRequired
 	};
 
 	exports['default'] = Channel;
