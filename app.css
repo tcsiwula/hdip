@@ -4,6 +4,8 @@
     flex-wrap: nowrap;
     height: 100vh;
     font-size: 16px;
+    background-color: darkslategray;
+
 }
 .nav{
     flex-basis: 20%;

@@ -14,7 +14,7 @@ class ChannelForm extends Component{
         <div className='form-group'>
           <input
             className='form-control'
-            placeholder='Add Channel'
+            placeholder='Add Language'
             type='text'
             ref='channel'
           />
